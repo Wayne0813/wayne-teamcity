@@ -1,4 +1,4 @@
-package com.wayne;
+package com.wayne.controller;
 
 import com.wayne.common.R;
 import com.wayne.entity.DemoUser;
