@@ -45,7 +45,7 @@ public class DemoController {
 
     @GetMapping("/test")
     public R test(String value) {
-        return R.ok(value).put("TEST", "这是测试接口");
+        return R.ok(value).put("TEST", "这是测试接口-01");
     }
 
 }
