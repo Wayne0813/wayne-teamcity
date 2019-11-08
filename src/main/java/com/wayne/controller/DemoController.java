@@ -33,31 +33,19 @@ public class DemoController {
         return demoService.updateUserById(user);
     }
 
-
     @PostMapping("/user")
     public R createUser(DemoUser user) {
         return demoService.createUser(user);
     }
-
 
     @DeleteMapping("/user")
     public R deleteUserById(Integer id) {
         return demoService.deleteUserById(id);
     }
 
-
-    public void test() {
-        // Iterator<String> iterators = transferLineMap.keySet().iterator();
-        // //    Iterator<Map.Entry<String, TransferLine>> iterators = transferLineMap.keySet().iterator();
-        // while (iterators.hasNext()) {
-        //     String key = iterators.next();
-        //     transferLineList.add(transferLineMap.get(key));
-        // }
-        // lineGrid.setData(transferLineList);
-        // lineGrid.refresh();
-
-
-
+    @GetMapping("/test")
+    public R test(String value) {
+        return R.ok(value).put("TEST", "这是测试接口");
     }
 
 }
